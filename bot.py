@@ -9,10 +9,10 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="/", intents=intents)
 
 words = [
-    "Sharp", "Sharpi", "Dsharp", "Sharp3", "Sim", "Stim", "Simrey", "Simre",
-    "Demon", "Cricketer", "Malof", "Shard", "Scotty", "Luna", "Sacer", "Funk",
-    "Splinter", "Vicious", "Moroccan", "Neuro", "Jynx", "Energetic", "Multi",
-    "Joseph", "Rascal", "Fae"
+    "Sharp", "Sharpi", "Dsharp", "Sharp3", "Sim", "Stim", "Alex", "Simre",
+    "Demon", "Cricketer", "Malor", "Sacerdor", "Scotty", "Luna", "Sacer", "Funk",
+    "Splinter", "Vicious", "Housni", "Neuro", "Jynx", "OG", "Multi",
+    "Joseph", "Rascal", "Fae", "Saad", "MrSmooth" , "Justus" , "Jeax" 
 ]
 
 @bot.event
@@ -31,5 +31,6 @@ async def genname(interaction: discord.Interaction):
     await interaction.response.send_message(name)
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+
 
 
